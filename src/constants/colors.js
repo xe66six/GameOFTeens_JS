@@ -1,6 +1,7 @@
 export const ThemeColors = {
     "light": {
-        main: '',
+        main: '#ffffff',
+        foreground: '#000000',
         accent: '#3787FF',
     }
 }

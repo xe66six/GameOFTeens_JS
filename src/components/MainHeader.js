@@ -4,22 +4,46 @@ import {ThemeColors} from "../constants/colors";
 
 const styles = {
     "container": {
+        background: ThemeColors.light.main + '80',
+        backdropFilter: 'blur(20px)',
         display: 'flex',
         justifyContent: 'space-evenly',
         alignItems: 'center',
         width: '100%',
         height: 'auto',
+        position: 'fixed',
+        top: 0,
+    },
+
+    "sticky": {
+        position: 'fixed',
+        top: 0
+    },
+
+    "logo": {
+        display: 'flex',
+        flexWrap: 'flex-start',
+    },
+
+    "header": {
+        fontStyle: 'normal',
+        fontWeight: 600,
+        fontSize: '24px',
+    },
+
+    "links": {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        columnGap: '20px',
     },
 
     "link": {
-        display: 'flex',
-        flexWrap: 'center',
         textDecoration: 'none',
-        margin: '20%',
         fontStyle: 'normal',
         fontWeight: 500,
-        fontSize: '32px',
-        lineHeight: '29px',
+        fontSize: '18px',
+        color: ThemeColors.light.foreground
     },
 
     "active": {
@@ -40,19 +64,18 @@ const links = [{
 
 const MainHeader = (props) => {
     const linkItems = links.map(item => (
-        <Link to={item.path} styles={[styles.link,
-            props.active === item.path & styles.active]}>{item.label}</Link>
+        <Link to={item.path} style={{...styles.link, ...(props.active === item.path && styles.active)}}>{item.label}</Link>
     ));
 
     return (
         <header>
             <div style={styles.container}>
-                <div className="header-logo">
-                    <p className="header-logo-text">
+                <div style={styles.logo}>
+                    <p style={styles.header}>
                         GolTeens Lab
                     </p>
                 </div>
-                <div className="navbar">
+                <div style={styles.links}>
                     {linkItems}
                 </div>
                 <div className="navbar-btn">

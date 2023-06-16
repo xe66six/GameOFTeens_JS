@@ -1,10 +1,12 @@
-import {Outlet} from "react-router-dom";
-import StartupCard from "../components/StartupCard";
+import {Outlet, useLocation} from "react-router-dom";
+import MainHeader from "../components/MainHeader";
 
 const Layout = () => {
+    const location = useLocation();
+    console.log(location);
     return (
         <>
-            <StartupCard title={'hello, world!'} author={'vasyl'}/>
+            <MainHeader active={location.pathname}/>
             <Outlet/>
         </>
     );

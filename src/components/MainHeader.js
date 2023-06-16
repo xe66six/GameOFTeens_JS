@@ -1,5 +1,6 @@
-import {node, string} from "prop-types";
+import {string} from "prop-types";
 import {Link} from "react-router-dom";
+import {ThemeColors} from "../constants/colors";
 
 const styles = {
     "container": {
@@ -11,11 +12,18 @@ const styles = {
     },
 
     "link": {
-
+        display: 'flex',
+        flexWrap: 'center',
+        textDecoration: 'none',
+        margin: '20%',
+        fontStyle: 'normal',
+        fontWeight: 500,
+        fontSize: '32px',
+        lineHeight: '29px',
     },
 
     "active": {
-        color: ''
+        color: ThemeColors.light.accent
     }
 }
 
@@ -32,7 +40,8 @@ const links = [{
 
 const MainHeader = (props) => {
     const linkItems = links.map(item => (
-        <Link to={item.path} styles={}>{item.label}</Link>
+        <Link to={item.path} styles={[styles.link,
+            props.active === item.path & styles.active]}>{item.label}</Link>
     ));
 
     return (

@@ -32,7 +32,7 @@ const links = [{
 
 const MainHeader = (props) => {
     const linkItems = links.map(item => (
-        <Link to={item.path} styles={}>{item.label}</Link>
+        <Link to={item.path} styles>{item.label}</Link>
     ));
 
     return (

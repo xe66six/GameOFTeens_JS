@@ -2,8 +2,8 @@ import StartupCard from "../components/StartupCard";
 import CardBlock from "../components/CardBlock";
 import {StartupList} from "../constants/startups"
 import '../components/StartupCard.css'
-import CoolButton from "../components/CoolButton";
 import {ThemeColors} from "../constants/colors";
+import ModalButton from "../components/ModalButton";
 
 const Startups = () => {
     const cards = StartupList.map(item => (
@@ -27,8 +27,8 @@ const Startups = () => {
                         <div className="primary-card-text">
                             Створи свій стартап та почни приймати інвестиції зараз
                         </div>
-                        <CoolButton background={ThemeColors.light.main}
-                                    foreground={ThemeColors.light.accent}>Додати старап</CoolButton>
+                        <ModalButton background={ThemeColors.light.main}
+                                    foreground={ThemeColors.light.accent}>Додати стартап</ModalButton>
                     </center>
 
                 </div>

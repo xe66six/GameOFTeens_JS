@@ -1,8 +1,8 @@
 import {string} from "prop-types";
 import {Link, useLocation} from "react-router-dom";
-import CoolButton from "./CoolButton";
 import {useEffect, useState} from "react";
 import "./MainHeader.css";
+import ModalButton from "./ModalButton";
 
 const links = [{
     label: 'Головна',
@@ -83,7 +83,7 @@ const MainHeader = (props) => {
                                     {linkItems}
                                 </div>
                                 <div className='header__links'>
-                                    <CoolButton>Додати стартап</CoolButton>
+                                    <ModalButton>Додати стартап</ModalButton>
                                 </div>
                             </>
                         )}

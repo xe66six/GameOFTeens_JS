@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.body_add {
+  margin: 0 auto;
+width: 400px;
+  background: #ffffff00;
+  color: #fff;
+  line-height: 1.8;
+  z-index: 120;
+  display: flex;
+  justify-content: flex-start;
+ 
+}
+
+.a_add {
+  text-decoration: none;
+}
+
+#container_add {
+  margin: 30px 0;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.form-wrap {
+  border: 1px solid #00000020;
+  flex-direction: column;
+  background: #fff;
+  padding: 15px 25px 30px;
+  color: #333;
+  border-radius: 10px;
+}
+
+.form-wrap h1,
+.form-wrap p {
+  text-align: center;
+}
+
+.form-wrap .form-group {
+  margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+  color: #aaa;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+.form-wrap .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  caret-color: #49c1a2;
+}
+
+.form-wrap .form-group input:focus {
+  outline-color: #49c1a2;
+}
+
+.form-wrap .btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 25px;
+  background: #3787FF;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  transition: all .3s;
+}
+
+
+.form-wrap .btn_ret {
+  width: 13%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-left: 280px;
+  background: transparent;
+  color: #000000;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+
+.form-wrap .btn_ret:hover {
+  background: #00000010;
+  color: #000000;
+}
+
+.form-wrap .btn:hover {
+  background: #3787FF80;
+  color: #f4f4f4;
+}
+
+.form-wrap .btn:focus {
+  outline-color: #3787FF;
+}
+
+.form-wrap .btn_ret:focus {
+  outline-color: #742323;
+}
+
+.form-wrap .bottom-text {
+  line-height: 1.4;
+  margin-top: 15px;
+}
+
+.form-wrap .bottom-text a:hover {
+  text-decoration: underline;
+}
+
+.footer_add {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.footer_add .a_add {
+  color: #3787FF;
+}
+
+.footer_add .a_add:hover {
+  color: #3787FF90;
+}

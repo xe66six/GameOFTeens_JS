@@ -1,7 +1,4 @@
 import { string } from "prop-types";
-//import 'https://fonts.googleapis.com';
-//import 'https://fonts.gstatic.com';
-//import 'https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap';
 import './StartupCard.css'
 
 const styles = {
@@ -33,15 +30,6 @@ const StartupCard = (props) => {
     
     return (
        
-
-
-
-
-
-
-
-
-
 
 <body class="body">
 
@@ -104,13 +92,13 @@ const StartupCard = (props) => {
     
     
     
-    <img style={styles.image} src={require(`../img/${props.image}`)}
+   {/* <img style={styles.image} src={require(`../img/${props.image}`)}
                  alt='Startup'></img>
             <p style={styles.label}>{props.title}</p>
             <p style={styles.author}>{props.author}</p>
 
 
-
+    */}
 
 
 </div>

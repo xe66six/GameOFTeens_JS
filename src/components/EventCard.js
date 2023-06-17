@@ -39,7 +39,7 @@ const styles = (img, badgeColor) => ({
         color: '#000000',
         margin: '5px 0'
     },
-    "author": {
+    "desc": {
         fontStyle: 'normal',
         fontWeight: 500,
         fontSize: '18px',
@@ -62,12 +62,12 @@ const styles = (img, badgeColor) => ({
             `linear-gradient(${badgeColor + "40"}, ${badgeColor + "20"})`,
         border: `1px solid ${badgeColor + "80"}`,
         color: badgeColor,
-        padding: '4px 8px',
+        padding: '2px 4px',
         margin: '0 15px',
         textAlign: 'center',
         borderRadius: '5px',
         fontWeight: 500,
-        fontSize: '18px'
+        fontSize: '16px'
     }
 });
 
@@ -81,7 +81,7 @@ const EventCard = (props) => {
                         {props.title}
                         { props.tag && <span style={useStyles.badge}>{props.tag}</span> }
                     </p>
-                    <p style={useStyles.author}>{props.author}</p>
+                    <p style={useStyles.desc}>{props.description}</p>
                     <p style={useStyles.date}>{props.date}</p>
                 </div>
             </div>

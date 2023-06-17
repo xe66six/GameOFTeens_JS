@@ -8,8 +8,10 @@
     font-size: 96px;
 }
 .hero__title-color {
-    color: #3787FF;
-    font-family: Ubuntu, Roboto, sans-serif;
+    background: linear-gradient(to right, #3787FF, #9e38ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .hero__title-decoration {
     text-decoration: underline;
@@ -77,6 +79,7 @@
 }
 .about-us__card-post {
     font-size: 20px;
+    color: #3787ff;
     margin-bottom: 35px;
 }
 

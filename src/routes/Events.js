@@ -28,7 +28,7 @@ export const EventList = [{
 const Events = (props) => {
     const cards = EventList.map(item => (
         <EventCard title={item.title}
-                   author={item.description}
+                   description={item.description}
                    image={item.image}
                    tag={item.tag}
                    tagColor={item.color}

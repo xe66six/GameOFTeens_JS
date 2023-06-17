@@ -1,8 +1,7 @@
-import {ThemeColors} from "../constants/colors";
 import {node, string} from "prop-types";
 
 const styles = (color, fore) => ({
-    "button": {
+    button: {
         height: '40px',
         background: color,
         border: 'none',
@@ -16,8 +15,8 @@ const styles = (color, fore) => ({
         lineHeight: '18px',
         textAlign: 'center',
         color: fore,
-        borderRadius: '5px'
-    }
+        borderRadius: '5px',
+    },
 });
 
 const CoolButton = (props) => {

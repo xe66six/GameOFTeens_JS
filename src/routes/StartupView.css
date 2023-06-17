@@ -22,12 +22,12 @@ img {
 }
 /*** Main ***/
 .main {
-    margin-top: 50px;
+    margin: 122px 0 45px 0;
 }
+
 /* Total Info */
 .total-info {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 60px;
 }
@@ -58,6 +58,7 @@ img {
 }
 @media (max-width: 1220px) {
     .total-info {
+        flex-wrap: wrap;
         justify-content: center;
     }
     .total-info__text {

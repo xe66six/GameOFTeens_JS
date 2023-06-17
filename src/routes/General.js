@@ -142,7 +142,7 @@ const General = (props) => {
     });
     SwiperCore.use([Autoplay]);
     return (
-        <main className="main">
+        <main className="general__main">
             <section className="hero">
                 <div className="container">
                     <div className="hero__content">
@@ -164,7 +164,8 @@ const General = (props) => {
                             centeredSlides
                             className="startups__slider"
                             autoplay={{
-                                delay: 5000,
+                                delay: 2500,
+                                disableOnInteraction: false,
                             }}
                             freeMode={true}
                             loop={true}

@@ -1,6 +1,7 @@
 import {string} from "prop-types";
 import {Link} from "react-router-dom";
 import {ThemeColors} from "../constants/colors";
+import CoolButton from "./CoolButton";
 
 const styles = {
     "container": {
@@ -10,7 +11,7 @@ const styles = {
         justifyContent: 'space-evenly',
         alignItems: 'center',
         width: '100%',
-        height: 'auto',
+        height: '70px',
         position: 'fixed',
         top: 0,
     },
@@ -66,7 +67,6 @@ const MainHeader = (props) => {
     const linkItems = links.map(item => (
         <Link to={item.path} style={{...styles.link, ...(props.active === item.path && styles.active)}}>{item.label}</Link>
     ));
-
     return (
         <header>
             <div style={styles.container}>
@@ -78,13 +78,9 @@ const MainHeader = (props) => {
                 <div style={styles.links}>
                     {linkItems}
                 </div>
-                <div className="navbar-btn">
                     <a href="#">
-                        <button className="true-navbar-btn">
-                            Додати стартап
-                        </button>
+                        <CoolButton>Додати стартап</CoolButton>
                     </a>
-                </div>
             </div>
         </header>
     );

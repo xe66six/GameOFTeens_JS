@@ -5,7 +5,7 @@ import EventCard from "../components/EventCard";
 export const EventList = [{
     title: 'Чашка кави, що зроблена з кави',
     tag: 'ТЕХНОЛОГІЇ',
-    color: '#4046ff',
+    color: '#7c40ff',
     description: 'Український бренд Rekava продемонстрував, як можна виготовляти посуд з використаної кавової гущі.',
     date: '01.05.2023',
     image: 'events/Rekava.jpg',
@@ -25,7 +25,7 @@ export const EventList = [{
     image: 'events/Donation.jpg',
 }];
 
-const Events = (props) => {
+const Events = () => {
     const cards = EventList.map(item => (
         <EventCard title={item.title}
                    description={item.description}

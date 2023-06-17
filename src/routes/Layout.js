@@ -31,8 +31,7 @@ const Layout = () => {
             <div className={`loader ${loading ? 'loadingState' : 'hidden'} ${disabled ? 'disabled' : ''}`}>
                 <div className='spinner'/>
             </div>
-
-                <Outlet/>
+            { !loading && (<Outlet/>) }
             <MainFooter/>
         </body>
     );

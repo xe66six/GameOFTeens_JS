@@ -1,9 +1,6 @@
-import StartupCard from "../components/StartupCard";
-import CardBlock from "../components/CardBlock";
 import {StartupList} from "../constants/startups"
 import '../components/StartupCard.css'
 import CoolButton from "../components/CoolButton";
-import {ThemeColors} from "../constants/colors";
 import {useLocation} from "react-router-dom";
 import "./StartupView.css";
 
@@ -25,7 +22,6 @@ const StartupView = () => {
                     </div>
                     <h2 className="description__title">Опис</h2>
                     <p className="startup__description">{item.description}</p>
-                    <CoolButton>Підтримати</CoolButton>
                 </div>
             </div>
         </main>

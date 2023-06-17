@@ -1,17 +1,17 @@
 export const AboutUsList = [{
     name: 'Микита',
     job: 'React developer',
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis blandit turpis cursus in hac habitasse platea. Et malesuada fames ac turpis egestas sed tempus urna. Ultrices tincidunt arcu non sodales neque sodales ut. Turpis massa sed elementum tempus egestas sed sed risus. Sapien eget mi proin sed libero enim sed.'
+    about: ''
 }, {
     name: 'Данило',
     job: 'HTML/CSS developer',
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis blandit turpis cursus in hac habitasse platea. Et malesuada fames ac turpis egestas sed tempus urna. Ultrices tincidunt arcu non sodales neque sodales ut. Turpis massa sed elementum tempus egestas sed sed risus. Sapien eget mi proin sed libero enim sed.'
+    about: ''
 }, {
     name: 'Василь',
     job: 'HTML/CSS developer',
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis blandit turpis cursus in hac habitasse platea. Et malesuada fames ac turpis egestas sed tempus urna. Ultrices tincidunt arcu non sodales neque sodales ut. Turpis massa sed elementum tempus egestas sed sed risus. Sapien eget mi proin sed libero enim sed.'
+    about: 'Мені 13 років, проживаю в Івано-Франківській області. Вчусь писати front-end уже 9 місяців за цей час вивчив html,  css, sass, js також вмію працювати в фігмі. Я досить швидко навчаюсь але часто лінуюсь.'
 }, {
     name: 'Роман',
     job: 'React developer',
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis blandit turpis cursus in hac habitasse platea. Et malesuada fames ac turpis egestas sed tempus urna. Ultrices tincidunt arcu non sodales neque sodales ut. Turpis massa sed elementum tempus egestas sed sed risus. Sapien eget mi proin sed libero enim sed.'
+    about: 'Мені 16 років, проживаю у Харкові та вивчаю JavaScript. З React познайомився нещодавно (приблизно місяць тому). Мій основний рід діяльності - написання застосунків на C# та GoLang. Із власних переваг можу зазначити жагу до вивчення нових та вдосколення набутих навичок.'
 }, ]

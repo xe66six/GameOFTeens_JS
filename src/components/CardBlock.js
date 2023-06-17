@@ -5,7 +5,8 @@ const styles = {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-around',
-
+        rowGap: '50px',
+        columnGap: '50px',
     },
 }
 

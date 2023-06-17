@@ -1,7 +1,7 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Layout from "./routes/Layout";
 import Startups from "./routes/Startups";
-import Events from "./components/Events";
+import Events from "./routes/Events";
 
 function App() {
   return (

@@ -1,10 +1,10 @@
 import {ThemeColors} from "../constants/colors";
 import {node, string} from "prop-types";
 
-const styles = {
+const styles = (color, fore) => ({
     "button": {
         height: '40px',
-        background: '#3787FF',
+        background: color,
         border: 'none',
         cursor: 'pointer',
         paddingLeft: '30px',
@@ -15,13 +15,16 @@ const styles = {
         fontSize: '16px',
         lineHeight: '18px',
         textAlign: 'center',
-        color: ThemeColors.light.main,
+        color: fore,
+        borderRadius: '5px'
     }
-}
+});
 
 const CoolButton = (props) => {
+    const useStyles = styles(props.background ?? '#3787FF',
+        props.foreground ?? '#ffffff');
     return (
-        <button style={styles.button}>
+        <button style={useStyles.button}>
             {props.children}
         </button>
     );
@@ -29,5 +32,8 @@ const CoolButton = (props) => {
 
 CoolButton.propTypes = {
     children: node,
+    background: string,
+    foreground: string,
 }
+
 export default CoolButton;

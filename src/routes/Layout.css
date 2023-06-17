@@ -1,0 +1,41 @@
+.spinner {
+    border: 6px solid #ffffff00; /* Light grey */
+    border-top: 6px solid #3787FF; /* Blue */
+    border-radius: 50%;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background: #ffffff80;
+    z-index: 101;
+}
+
+.loadingState {
+    transition: opacity 0.1s ease-out;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.disabled {
+    visibility: hidden;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

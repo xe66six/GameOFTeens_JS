@@ -14,4 +14,22 @@ export const StartupList = [{
     contact: "+380062536452",
     image: "startups/Kokoon.png",
     description: ""
+}, {
+    title: "Sample",
+    author: "undefined",
+    contact: "+380996765765",
+    image: "rect.png",
+    description: "dsdsds"
+}, {
+    title: "Sample",
+    author: "undefined",
+    contact: "+380996765765",
+    image: "rect.png",
+    description: "dsdsds"
+}, {
+    title: "Sample",
+    author: "undefined",
+    contact: "+380996765765",
+    image: "rect.png",
+    description: "dsdsds"
 }];

@@ -10,6 +10,10 @@ const Layout = () => {
     const location = useLocation();
 
     useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [location])
+
+    useEffect(() => {
         setLoading(true);
         setDisabled(false);
 

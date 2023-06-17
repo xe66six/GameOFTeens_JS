@@ -9,7 +9,8 @@ const Startups = () => {
     const cards = StartupList.map(item => (
         <StartupCard title={item.title}
                      author={item.author}
-                     image={item.image}/>
+                     image={item.image}
+                     href={item.id}/>
     ))
     return (
             <section className="startap">

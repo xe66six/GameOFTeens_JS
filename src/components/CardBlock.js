@@ -10,7 +10,7 @@ const styles = {
     },
 }
 
-const StartupCard = (props) => {
+const CardBlock = (props) => {
     return (
         <div style={styles.block}>
             {props.children}
@@ -18,8 +18,8 @@ const StartupCard = (props) => {
     );
 }
 
-StartupCard.propTypes = {
+CardBlock.propTypes = {
     children: node
 }
 
-export default StartupCard
+export default CardBlock;

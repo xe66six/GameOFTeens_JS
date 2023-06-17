@@ -1,0 +1,165 @@
+.hero__content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.hero__title {
+    margin: 0;
+    font-size: 96px;
+}
+.hero__title-color {
+    color: #3787FF;
+    font-family: Ubuntu, Roboto, sans-serif;
+}
+.hero__title-decoration {
+    text-decoration: underline;
+}
+
+.startups {
+    background-color: #EDEDED;
+    padding: 40px 0;
+}
+.startups__title {
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.startups__slider {
+    text-align: center;
+}
+
+.news {
+    padding: 40px 0;
+}
+.news__btn {
+    color: #3787FF;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.news__btn:hover {
+    text-decoration: underline;
+}
+.news__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.news__card {
+    padding: 25px 15px;
+    text-align: center;
+    background-color: #EDEDED;
+}
+
+.about-us {
+    background-color: #EDEDED;
+    padding: 40px 0;
+}
+.about-us__title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.about-us__flex {
+    display: flex;
+    margin: 0 -10px;
+}
+.about-us__card {
+    padding: 20px 15px 80px 15px;
+    background-color: #fff;
+    margin: 0 10px;
+}
+.about-us__card-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.about-us__card-post {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 1460px) {
+    .container {
+        margin: 0 10px;
+    }
+    .about-us__flex {
+        margin: 0;
+    }
+}
+@media (max-width: 1220px) {
+    .news__flex {
+        justify-content: center;
+        gap: 45px;
+    }
+}
+@media (max-width: 1000px) {
+    .about-us__flex {
+        flex-wrap: wrap;
+        gap: 45px;
+    }
+}
+@media (max-width: 750px) {
+    .logo {
+        order: 1;
+        font-size: 20px;
+    }
+    .add-startap {
+        order: 2;
+        font-size: 16px;
+    }
+    .header__menu {
+        order: 3;
+    }
+    .header__menu-burger {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .nav.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        background-color: #3787FF;
+        align-items: center;
+    }
+    .nav__list-item {
+        display: block;
+        margin: 45px;
+    }
+    .nav__link, .nav__link.active {
+        color: #fff;
+        font-size: 24px;
+        font-weight: inherit;
+    }
+    .hero__title {
+        font-size: 52px;
+    }
+    .startups__title {
+        font-size: 48px;
+    }
+    .about-us__title {
+        font-size: 44px;
+    }
+}
+@media (max-width: 375px) {
+    .add-startap {
+        font-size: 14px;
+    }
+    .logo {
+        font-size: 18px;
+    }
+}
+
+.swiper-slide img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    width: 800px;
+    height: 450px;
+}

@@ -1,6 +1,7 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Layout from "./routes/Layout";
 import Startups from "./routes/Startups";
+import Events from "./components/Events";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
           <Routes>
               <Route path='/' element={<Layout/>}>
                   <Route path="startups" element={<Startups/>}/>
+                  <Route path="events" element={<Events/>}/>
               </Route>
           </Routes>
       </BrowserRouter>
@@ -15,3 +17,4 @@ function App() {
 }
 
 export default App;
+ 

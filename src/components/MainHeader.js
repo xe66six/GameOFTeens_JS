@@ -4,7 +4,7 @@ import {ThemeColors} from "../constants/colors";
 
 const styles = {
     "container": {
-        background: ThemeColors.light.main + '80',
+        background: ThemeColors.light.main + 'C0',
         backdropFilter: 'blur(20px)',
         display: 'flex',
         justifyContent: 'space-evenly',

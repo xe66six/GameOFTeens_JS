@@ -14,17 +14,6 @@ const Startups = () => {
         <div>
             <CardBlock>
                 {cards}
-                {cards}
-                {cards}
-                {cards}
-                {cards}
-                {cards}
-                {cards}
-                {cards}
-                {cards}
-                {cards}
-                {cards}
-                {cards}
             </CardBlock>
         </div>
     );
